@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                     if (i!=s){
                         bitmap = bitmapRegionDecoder.decodeRegion(new Rect(0, i*width, width, (i+1)*width), options);
                     }else{
-                        bitmap = bitmapRegionDecoder.decodeRegion(new Rect(0, width, width, height), options);
+                        bitmap = bitmapRegionDecoder.decodeRegion(new Rect(0, i*width, width, height), options);
                     }
                     mList.add(bitmap);
                 }
